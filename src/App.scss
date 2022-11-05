@@ -1,0 +1,55 @@
+@import "~@bryntum/grid/grid.stockholm.css";
+
+body,
+html {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Lato, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+#app {
+  flex: 1 1 100%;
+}
+
+
+
+.b-tree-parent-row[aria-level="1"] {
+  border-bottom-color: #aaa;
+  background-color: #e0f5eb;
+}
+
+.b-tree-parent-row[aria-level="1"] .b-grid-cell {
+  border-inline-end: none;
+  font-size: 18px;
+  font-weight: 700;
+  // visibility: hidden;
+}
+
+.b-tree-parent-row[aria-level="1"] .b-grid-cell[aria-colindex="1"] {
+  justify-content: left;
+  font-size: 15px;
+  font-weight: 600;
+  // visibility: visible;
+}
+
+.b-tree-parent-row[aria-level="2"] .b-grid-cell {
+  border-inline-end: none;
+  justify-content: right;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.b-tree-parent-row[aria-level="2"] .b-grid-cell[aria-colindex="1"] {
+  justify-content: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #606263;
+}
+
+.b-tree-parent-row[aria-level="2"] {
+  background-color: #f2f7ff;
+  border-bottom-color: #f2f7ff;
+}
